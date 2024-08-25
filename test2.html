@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>랜덤 팝업 예제</title>
+    <script>
+        // 미리 정해진 메시지 목록
+        const messages = [
+            "오늘도 화이팅!",
+            "웃음은 최고의 보약입니다.",
+            "긍정적인 생각이 긍정적인 결과를 만듭니다.",
+            "노력은 배신하지 않습니다.",
+            "당신은 할 수 있습니다!",
+            "행복은 작은 것에서부터 시작됩니다.",
+            "실패는 성공의 어머니입니다.",
+            "새로운 도전을 두려워하지 마세요.",
+            "매일 조금씩 성장하고 있습니다.",
+            "당신의 꿈을 응원합니다!"
+        ];
+
+        // 페이지가 로드될 때 실행되는 함수
+        window.onload = function() {
+            // 메시지 목록에서 랜덤하게 하나 선택
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            const selectedMessage = messages[randomIndex];
+            // alert 창으로 메시지 표시
+            alert(selectedMessage);
+        };
+    </script>
+</head>
+<body>
+    <p>이 페이지를 열었을 때, 자동으로 랜덤 메시지가 팝업으로 표시됩니다.</p>
+</body>
+</html>
